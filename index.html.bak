@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>我军哥天下第一帅</title>
+	<title>全世界最美的人</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="生日礼物，惊喜,有趣,最美" />
 	<meta name="description" content="世界上最美的女人，是老吸，但是她不喜欢我 ಥ_ಥ " />
@@ -48,7 +48,11 @@ var _hmt = _hmt || [];
 			</div>
 			<div class="col-xs-4 col-md-4">
 				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+<<<<<<< HEAD
 					<img src="img/11.jpg" alt="...">
+=======
+					<img src="img/10.jpg" alt="...">
+>>>>>>> 1c59e2ec25aa7066f4e84826a0477ecad120b802
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
@@ -75,6 +79,9 @@ var _hmt = _hmt || [];
 			</div>
 		</div>
 	</div>
-<h3>军哥最帅</h3>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c59e2ec25aa7066f4e84826a0477ecad120b802
 </body>
 </html>
