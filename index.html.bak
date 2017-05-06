@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>全世界最美的人</title>
+	<title>小石头</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="生日礼物，惊喜,有趣,最美" />
-	<meta name="description" content="世界上最美的女人，是老吸，但是她不喜欢我 ಥ_ಥ " />
+	<meta name="keywords" content="小石头" />
+	<meta name="description" content="石头大爷" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
@@ -22,66 +22,68 @@ var _hmt = _hmt || [];
 
 </head>
 <body>
-	<div class="container">
+	<!-- <div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/1.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/2.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/3.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/4.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-<<<<<<< HEAD
+				<a href="#" class="thumbnail">
+
 					<img src="img/11.jpg" alt="...">
-=======
-					<img src="img/10.jpg" alt="...">
->>>>>>> 1c59e2ec25aa7066f4e84826a0477ecad120b802
+
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/6.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/7.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/8.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/9.jpg" alt="...">
 				</a>
 			</div>
 		</div>
-	</div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 1c59e2ec25aa7066f4e84826a0477ecad120b802
+	</div>-->
+     
+	 <div class="container">
+		 <div class="col-xs-4 col-md-4">
+			<a href="#" class="thumbnail">
+				<img src="img/9.jpg" alt="...">
+			</a>
+		 </div>
+	 </div>
 </body>
 </html>
