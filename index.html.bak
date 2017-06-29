@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>小石头</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="小石头" />
+	<meta name="description" content="石头大爷" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js" ></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e9e0ed8d2dd56059cc040dc1f05b7424";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<style>
+	body{
+		background-image: url(img/me.jpg);
+		/* 背景图垂直、水平均居中 */
+		background-position: center center;
+		/* 背景图不平铺 */
+		background-repeat: no-repeat;
+		/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+		background-attachment: fixed;
+		/* 让背景图基于容器大小伸缩 */
+		background-size: cover;
+		/* 设置背景颜色，背景图加载过程中会显示背景色 */
+		background-color: #464646;
+		
+		text-align: center;
+		
+	}
+	
+	.parent{
+                position: fixed;
+                top: 90%;
+                bottom: 10%;
+                left: 50%;
+                right: 50%;
+                
+            }
+            .show{
+                height: 50px;
+                width: 22rem;
+                /* 以下两个属性必须为width,height值的负一半 */
+                margin-left: -11rem;
+                margin-top: -25px;
+            }
+            
+	
+</style>
+
+
+</head>
+<body>
+	<div class="parent">
+        <div class="show">
+            <button type="button"  class="layui-btn layui-btn-radius" onclick="textLayui()">来都来了,不对我说点什么?</button>
+        </div>
+    </div>
+	
+	
+	
+</body>
+</html>
+<script src="layui/layui.js"></script>
+	<script>
+	 
+	//一般直接写在一个js文件中
+		layui.use(['layer'], function(){
+		  var layer = layui.layer;
+		  //layer.msg('Hello World');
+		});
+		
+	
+	
+		function textLayui(){
+			layer.prompt({
+			  formType: 2,
+			  value: '来,跟哥说点悄悄话',
+			  title: '黄昏只对梨花',
+			  area: ['400px', '350px'] //自定义文本域宽高
+			}, function(value, index, elem){
+			  layer.msg("反正呢,哥没配数据库,也看不到你说什么",{icon:6});
+			  layer.close(index);
+			});
+		}
+	
+	
+	</script> 
