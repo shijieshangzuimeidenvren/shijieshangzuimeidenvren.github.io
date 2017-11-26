@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我喜欢你~</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+ <div style="display: none"; class="music">
+	<audio controls="controls" autoplay="autoplay" loop="-1">
+		<source src="js/Distance.mp3" type="audio/mp3">
+	</audio>
+</div> 
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			Boy name = <span class="keyword">Mr</span> Xu<br />
+			Girl name = <span class="keyword">Mrs</span> Chen~<br />
+			<span class="comments">// **2013-09-01. </span><br />
+			男孩纸认识了女孩儿;<br />
+			<span class="comments">// **2014-09-01.</span><br />
+			男孩稍微地，有点在意女孩（忘了什么时候啦~）;<br />
+			<span class="comments">// **2015-09-24.</span><br />
+			女孩的军训呢，男孩听了好多女孩的，醉话~开始，很在意了;<br />
+			<span class="comments">// **2015-10-28.</span><br />
+			默默喜欢女孩的男孩得到了，女孩的，四年之约，非常，非常！高兴！！;<br />
+			<span class="comments">// **2016-04-03.</span><br />
+			应该是，初次表白？然后，得到了，回应的！哇，巨兴奋，当时还是晚上，然后就睡不着了···;<br />
+			<span class="comments">// **2016-08-09.</span><br />
+			这年的七夕，男孩傻乎乎的，做了很蠢很蠢的告白，嗯···某种缘故，应该是失败了的，但，还是喜欢着;<br />
+			<span class="comments">// **2016--2017.</span><br />
+			嗯···男孩不知道为啥，不经常和女孩联系，被现在的男孩给鄙视了;<br />
+			<span class="comments">// **2017-08-27.</span><br />
+			哎呀，不知何时起，渐渐地，男孩再次喜欢上了女孩，不对，应该是，发觉自己还是，很喜欢，女孩der;<br />
+			就，邀了出去，一年不见，男孩见到女孩好惊喜的说;<br />
+			<span class="comments">// **2017-08-28.</span><br />
+			又一次七夕了~纠结了好久好久，豁出去了，再一次，表白了;<br />
+			<span class="comments">// 这首背景音乐，是，我很喜欢的，吉他曲.</span><br />
+			<span class="comments">// Distance.</span><br />
+			<span class="comments">// 作者言道：这是，没有歌词的情歌,要，心里，装着一个人，去听.</span><br />
+			<span class="comments">// So, this is for you, and someday I will play it for you.</span><br />
+			<span class="comments">// 近在咫尺的暖意，远在天涯的心.</span><br />
+			<span class="comments">// 成都很远很远der~~ 但， 希望，男孩和女孩之间，是 没有距离的~.</span><br />
+			<span class="comments">// 很喜欢，真的.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			My girl, I wanna love you forever;<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					我啊，很早就喜欢你了呀~，你看，这么久了
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					想长长久久的喜欢下去呀~<br/>
+					<div class="signature">- Lin</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015, 10, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
