@@ -1,80 +1,80 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>世界上最美的女人，是老吸</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="生日礼物，惊喜,有趣,最美" />
-	<meta name="description" content="世界上最美的女人，是老吸，但是她不喜欢我 ಥ_ಥ " />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e9e0ed8d2dd56059cc040dc1f05b7424";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
+	<title>给最爱的你</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="v_css/default_dev.css" type="text/css" rel="stylesheet">
+	<link href="v_css/fonts.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="v_js/jquery.js"></script>
+	<script type="text/javascript" src="v_js/garden.js"></script>
+    <script type="text/javascript" src="v_js/functions_dev.js"></script>
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/1.jpg" alt="...">
-				</a>
+
+<body  style="background: url(background.jpg) repeat-y center center fixed;
+							-webkit-background-size: cover; -moz-background-size: cover;
+							-o-background-size: cover; background-size: cover;">
+	<div id="mainDiv" style="z-index:0">
+		<div id="content">
+			<div id="code" onclick="hideVideo()">
+				<span class="keyword">送给亲爱的 小迷妹 , </span><br />
+				<br /><br />
+				<span class="keyword">Je t'aime !</span><span class="space"/><br />
+				<br /><br />
+				<span class="keyword">除却黄土白骨</span><span class="space"/>
+				<br />
+				<span class="keyword">我愿</span><span class="space"/><span class="keyword">守护你百岁无忧</span><br />
+				<br /><br /><br /></br />
+				<span class="placeholder" /><span class="placeholder" /><span class="placeholder" /><span class="placeholder" />
+					<span class="keyword">——  斌斌</span>
 			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/2.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/3.jpg" alt="...">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/4.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/5.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/6.jpg" alt="...">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/7.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/8.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/9.jpg" alt="...">
-				</a>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Happiness accumulates with the tick-tock,
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						And I just keep falling in love with you: <br />again and again<br/><br />
+						<div class="signature">Merry Christmas</div>
+					</div>
+					<div id="dog">
+						<a onclick="showVideo()">
+							<img id="dogImg" src="dog_small.png" onmouseover="dogMouseOver()">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div id="videoDiv">
+			<video id="tiffanyVideo" style="width: 100%;" preload="auto" loop="loop" controls="controls">
+					<source src="http://media.tiffany.com/is/content/Tiffany/Holiday_Video_Homepage_MP4" type="video/mp4">
+					<source src="http://media.tiffany.com/is/content/Tiffany/Holiday_Video_Homepage_webm" type="video/webm">
+			</video>
+        </div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.toLocaleString();
+        setTimeout(function () {
+            startHeartAnimation(1);
+        }, 430);
 
+        timeElapse(together);
+        setInterval(function () {
+            timeElapse(together);
+        }, 50);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+	</script>
 </body>
 </html>
