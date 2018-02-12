@@ -11,9 +11,7 @@
 		 
 		 musicList:[
 			{songSheet:"我的歌单",name:"等你下课",src:"music/周杰伦-等你下课.mp3",author:"周杰伦"},
-			{songSheet:"我的歌单",name:"不要就这样离开我.mp3",src:"music/樊凡 - 不要就这样离开我.mp3",author:"樊凡"},
-			{songSheet:"我的歌单",name:"美人心计",src:"music/笛声 - 美人心计 古筝.mp3",author:"无"},
-			{songSheet:"我的歌单",name:"怎么忍心放开手",src:"music/怎么忍心放开手.m4a",author:"山野"}
+			
 		]
 		 
 	}
