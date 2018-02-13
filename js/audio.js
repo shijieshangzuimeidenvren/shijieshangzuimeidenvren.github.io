@@ -24,7 +24,7 @@
 			 {songSheet:"我的歌单",name:"简单爱（live）",src:"music/简单爱（live）.mp3",author:"周杰伦、陈奕迅"},
 			  {songSheet:"我的歌单",name:"你听得到（live）",src:"music/你听得到（live）.mp3",author:"周杰伦"},
 			 {songSheet:"我的歌单",name:"七里香（live）",src:"music/七里香（live）.mp3",author:"周杰伦"},
-			 
+			 {songSheet:"我的歌单",name:"爱我别走（live）",src:"music/爱我别走（live）.mp3",author:"周杰伦"},
 		]
 		 
 	}
