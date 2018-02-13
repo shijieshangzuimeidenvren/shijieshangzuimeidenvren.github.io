@@ -19,7 +19,7 @@
 			{songSheet:"我的歌单",name:"稻香",src:"music/稻香.mp3",author:"周杰伦"},
 		        {songSheet:"我的歌单",name:"珊瑚海",src:"music/珊瑚海.mp3",author:"周杰伦、梁心颐"}, 
 			 {songSheet:"我的歌单",name:"晴天",src:"music/晴天.mp3",author:"周杰伦"},
-			{songSheet:"我的歌单",name:"算什么男人",src:"music/算什么男人.mp3",author:"周杰伦"},
+			{songSheet:"我的歌单",name:"算什么男人",src:"music/算什么男人_周杰伦.mp3",author:"周杰伦"},
 			{songSheet:"我的歌单",name:"给我一首歌的时间",src:"music/给我一首歌的时间.mp3",author:"周杰伦"},
 			 {songSheet:"我的歌单",name:"简单爱（live）",src:"music/简单爱（live）.mp3",author:"周杰伦、陈奕迅"},
 			 
