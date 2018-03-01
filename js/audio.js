@@ -12,7 +12,7 @@
 		 isFirstPlay:true, //未播放
 		 
 		 musicList:[
-			 {songSheet:"我的歌单",name:"东风破（live）",src:"music/东风破（Live）.mp3",author:"周杰伦"},
+			 {songSheet:"我的歌单",name:"东风破（live）",src:"music/东风破(Live).mp3",author:"周杰伦"},
 			{songSheet:"我的歌单",name:"等你下课",src:"music/周杰伦-等你下课.mp3",author:"周杰伦"},
 			{songSheet:"我的歌单",name:"刚好遇见你",src:"music/刚好遇见你.mp3",author:"李玉刚"},
 		        {songSheet:"我的歌单",name:"前世情人",src:"music/前世情人.mp3",author:"周杰伦"},
