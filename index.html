@@ -1,14 +1,94 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<title>世界上最美的女人，是老吸</title>
+<head><link rel="icon" href="img/5.png" type="image/x-icon"/>
+	<title>郝郝女生节快乐！</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="生日礼物，惊喜,有趣,最美" />
-	<meta name="description" content="世界上最美的女人，是老吸，但是她不喜欢我 ಥ_ಥ " />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="情人节快乐，郝郝,haomingzhu，郝郝情人节快乐，郝明珠，www.郝明珠.com" />
+	<meta name="description" content="我给郝郝做的一个小网页 " />
+	<meta name="kooyer" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/global.css" rel="stylesheet">
+   	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link href="css/music.css" rel="stylesheet">
+	
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
+		
+	
 
+<div class="container">
+    <div class="music_box">
+    	<div class="play_box" >
+			<div class="row control">
+			    <div class="col-xs-2">
+				  	<img src="img/5.png" width="80" height="80">
+					<span id="pernum">0%</span>
+					<div id="over"></div>
+			  	</div>
+			    <div class="col-xs-3" id="musicMsg">
+			    	<p class="playMode"><span >顺序播放</span></p>
+				  	<p class="color_white mt10" style="overflow: hidden;" style="width: 100%;">
+			    		<span class="musicName"></span>
+		        	</p>
+		            <p class="fs12 author">TFboys</p>
+		            <p class="fs12" ><span id="ctimer">00:00</span>/<span id="timer">00:00</span></p>
+			  	</div>
+				<div class="col-xs-7 controls_right">
+			  		<div class="menu_btn">
+				  		<a href="javascript:void(0)" id="exlist" class="music_icon musicList color_white">9</a>
+		            	<a href="javascript:void(0)">词</a>
+				  	</div>
+		            <div class="play_btn"> 
+		            	<a href="javascript:void(0)" class="music_icon prev_song" onclick="playPrev(this)"><!--上一曲--></a>
+		                <a href="javascript:void(0)" id="play" onclick="newPlay()" class="music_icon play_tb"><!--播放--></a>
+		                <a href="javascript:void(0)" id="pause" onclick="stop()" class="music_icon pause_tb" style="display:none;"><!--暂停--></a>
+		                <a href="javascript:void(0)" class="music_icon next_song" onclick="playNext(this)"><!--下一曲--></a>
+		                <!--播放模式控制-->
+		                <a href="javascript:void(0)" class="music_icon oder_cycle cycle_mode" id="oder_cycle" onclick="playModeTab(1)"><!--顺序循环--></a>
+		                <a href="javascript:void(0)" class="music_icon random_cycle cycle_mode" id="random_cycle" onclick="playModeTab(2)" style="display: none;"><!--随机--></a>
+		                <a href="javascript:void(0)" class="music_icon single_cycle cycle_mode" id="single_cycle" onclick="playModeTab(3)" style="display: none;"><!--单曲循环--></a>
+		                <!--从头开始播放-->
+		                <a href="javascript:void(0)" class=" cycle" onclick="repeat()"><img src="img/replay.png" width=21/></a>
+		                <a href="javascript:void(0)" class="music_icon volume" id="muted" onclick="muted(false)"><!--音量--></a>
+		                <a href="javascript:void(0)" class="music_icon volume" id="unMuted" onclick="muted(true)"><!--音量--></a>
+		                <div style="" class="v_progress" id="v_progress">
+		                	<a href="javascript:void(0)" class=" v_percent" id="v_percent"><!--音量进度--></a>
+		                </div>
+			  		</div>
+				</div>
+			</div>
+			<div class="play_rolling" id="play_rolling">
+	    		<li id="percent"></li>
+	    	</div>
+		</div>
+    </div>
+	<!--歌曲列表弹出层-->
+    <div class="play_list">
+    	<div class="play_list_title">
+        	<a href="javascript:void(0)" class="fl color_white title_name">播放列表</a>
+        </div>
+        <div class="play_list_cont">
+        	<ul id="music_list">
+            	
+        	</ul>
+        </div>
+    </div>
+    
+    <div class="shrink_box">               	
+        <a href="javascript:void(0)" id="expyes" class="music_icon pop_down"><!--点击收回--></a>
+        <a href="javascript:void(0)" id="expno" class="music_icon pop_up"><!--点击弹出--></a>
+    </div>
+</div>   
+	
+	
+	
+	
+	
+	<!--dojo.js-->
+	<script type="text/javascript" src="js/audio.prototype.js" ></script>
+	<script type="text/javascript" src="js/audio.js" ></script>
+	
+	
+	
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -18,63 +98,71 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-
-
 </head>
+	
 <body>
-	<div class="container">
+	<P align=center><b>To❤郝郝❤</b></P>
+	<P align=center>女生节快乐啦，风雪是你,平淡是你,心底温柔是你,目光所至,也是你。  by ❤顾顾❤</P>
+<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/1.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/2.jpg" alt="...">
+				<a href="#" class="thumbnail">
+					<img src="img/2.png" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/3.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/4.jpg" alt="...">
+				<a href="#" class="thumbnail">
+					<img src="img/4.png" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/5.jpg" alt="...">
+				<a href="https://Kooyer.github.io" class="thumbnail">
+					<img src="img/55.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/6.jpg" alt="...">
+				<a href="#" class="thumbnail">
+					<img src="img/6.png" alt="...">
 				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/7.jpg" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
-					<img src="img/8.jpg" alt="...">
+				<a href="#" class="thumbnail">
+					<img src="img/8.png" alt="...">
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="https://shijieshangzuimeidenvren.github.io" class="thumbnail">
+				<a href="#" class="thumbnail">
 					<img src="img/9.jpg" alt="...">
 				</a>
 			</div>
 		</div>
 	</div>
+	
 
 </body>
+	
+	
+	
+
+	
+	
 </html>
