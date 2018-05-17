@@ -1,168 +1,109 @@
-<!DOCTYPE HTML>
-<html>
-<head><link rel="icon" href="img/5.png" type="image/x-icon"/>
-	<title>Hello，小仙女！</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="情人节快乐，郝郝,haomingzhu，郝郝情人节快乐，郝明珠，www.郝明珠.com" />
-	<meta name="description" content="我给郝郝做的一个小网页 " />
-	<meta name="kooyer" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="css/global.css" rel="stylesheet">
-   	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link href="css/music.css" rel="stylesheet">
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="css/ohmygod.css" rel="stylesheet" type="text/css"/>
-		
-	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML5+jQuery制作温馨浪漫爱心表白动画特效(我们程序员也有浪漫的时候)-psd素材网</title>
 
-<div class="container">
-    <div class="music_box">
-    	<div class="play_box" >
-			<div class="row control">
-			    <div class="col-xs-2">
-				  	<img src="img/5.png" width="80" height="80">
-					<span id="pernum">0%</span>
-					<div id="over"></div>
-			  	</div>
-			    <div class="col-xs-3" id="musicMsg">
-			    	<p class="playMode"><span >顺序播放</span></p>
-				  	<p class="color_white mt10" style="overflow: hidden;" style="width: 100%;">
-			    		<span class="musicName"></span>
-		        	</p>
-		            <p class="fs12 author">TFboys</p>
-		            <p class="fs12" ><span id="ctimer">00:00</span>/<span id="timer">00:00</span></p>
-			  	</div>
-				<div class="col-xs-7 controls_right">
-			  		<div class="menu_btn">
-				  		<a href="javascript:void(0)" id="exlist" class="music_icon musicList color_white">9</a>
-		            	<a href="javascript:void(0)">词</a>
-				  	</div>
-		            <div class="play_btn"> 
-		            	<a href="javascript:void(0)" class="music_icon prev_song" onclick="playPrev(this)"><!--上一曲--></a>
-		                <a href="javascript:void(0)" id="play" onclick="newPlay()" class="music_icon play_tb"><!--播放--></a>
-		                <a href="javascript:void(0)" id="pause" onclick="stop()" class="music_icon pause_tb" style="display:none;"><!--暂停--></a>
-		                <a href="javascript:void(0)" class="music_icon next_song" onclick="playNext(this)"><!--下一曲--></a>
-		                <!--播放模式控制-->
-		                <a href="javascript:void(0)" class="music_icon oder_cycle cycle_mode" id="oder_cycle" onclick="playModeTab(1)"><!--顺序循环--></a>
-		                <a href="javascript:void(0)" class="music_icon random_cycle cycle_mode" id="random_cycle" onclick="playModeTab(2)" style="display: none;"><!--随机--></a>
-		                <a href="javascript:void(0)" class="music_icon single_cycle cycle_mode" id="single_cycle" onclick="playModeTab(3)" style="display: none;"><!--单曲循环--></a>
-		                <!--从头开始播放-->
-		                <a href="javascript:void(0)" class=" cycle" onclick="repeat()"><img src="img/replay.png" width=21/></a>
-		                <a href="javascript:void(0)" class="music_icon volume" id="muted" onclick="muted(false)"><!--音量--></a>
-		                <a href="javascript:void(0)" class="music_icon volume" id="unMuted" onclick="muted(true)"><!--音量--></a>
-		                <div style="" class="v_progress" id="v_progress">
-		                	<a href="javascript:void(0)" class=" v_percent" id="v_percent"><!--音量进度--></a>
-		                </div>
-			  		</div>
-				</div>
-			</div>
-			<div class="play_rolling" id="play_rolling">
-	    		<li id="percent"></li>
-	    	</div>
-		</div>
-    </div>
-	<!--歌曲列表弹出层-->
-    <div class="play_list">
-    	<div class="play_list_title">
-        	<a href="javascript:void(0)" class="fl color_white title_name">播放列表</a>
-        </div>
-        <div class="play_list_cont">
-        	<ul id="music_list">
-            	
-        	</ul>
-        </div>
-    </div>
-    
-    <div class="shrink_box">               	
-        <a href="javascript:void(0)" id="expyes" class="music_icon pop_down"><!--点击收回--></a>
-        <a href="javascript:void(0)" id="expno" class="music_icon pop_up"><!--点击弹出--></a>
-    </div>
-</div>   
-	
-	
-	
-	
-	
-	<!--dojo.js-->
-	<script type="text/javascript" src="js/audio.prototype.js" ></script>
-	<script type="text/javascript" src="js/audio.js" ></script>
-	
-	
-	
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e9e0ed8d2dd56059cc040dc1f05b7424";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
 </head>
-	
+
 <body>
-	<P align=center><b>To❤小仙女❤</b></P>
-	<P align=center>不知道是从什么时候开始，就喜欢上你，然后就越来越喜欢。 繁忙的日子会让我无心空闲，但自从认识你之后，心里便不会再空落落。反正就想告诉你，真的真的很喜欢你。--2018.5.2    by ❤顾先生❤</P>
-<div class="container">
-		<div class="row">
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/1.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/2.png" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/3.jpg" alt="...">
-				</a>
-			</div>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2014—01-01,</span><br />
+			<span class="space"/><span class="comments">*2014-01-04.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> LI<br />
+			Girl name = <span class="keyword">Mrs</span> ZHANG<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I love you forever;<br />
 		</div>
-		<div class="row">
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/4.png" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="https://Kooyer.github.io" class="thumbnail">
-					<img src="img/55.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/6.png" alt="...">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/7.jpg" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/8.png" alt="...">
-				</a>
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<a href="#" class="thumbnail">
-					<img src="img/9.jpg" alt="...">
-				</a>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					<div class="signature">- 爱你的人</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	
+	<div id="copyright">
+		<a href="#">....</a><br />
+		<a href="#">....</a><br />
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 2, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
 
 </body>
-	
-	
-	
-
-	
-	
 </html>
